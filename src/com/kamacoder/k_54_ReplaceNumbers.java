@@ -50,28 +50,30 @@ public class k_54_ReplaceNumbers {
         out.flush();
     }
 
-}
-/**
- * 快读
- */
-class Reader {
-    static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-    static StringTokenizer tokenizer = new StringTokenizer("");
-    static String nextLine() throws IOException {// 读取下一行字符串
-        return reader.readLine();
-    }
-    static String next() throws IOException {   // 读取下一个字符串
-        while (!tokenizer.hasMoreTokens()) {
-            tokenizer = new StringTokenizer(reader.readLine());
+    /**
+     * 快读
+     */
+    class Reader {
+        static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        static StringTokenizer tokenizer = new StringTokenizer("");
+        static String nextLine() throws IOException {// 读取下一行字符串
+            return reader.readLine();
         }
-        return tokenizer.nextToken();
+        static String next() throws IOException {   // 读取下一个字符串
+            while (!tokenizer.hasMoreTokens()) {
+                tokenizer = new StringTokenizer(reader.readLine());
+            }
+            return tokenizer.nextToken();
+        }
+
+        static int nextInt() throws IOException {// 读取下一个int型数值
+            return Integer.parseInt(next());
+        }
+
+        static double nextDouble() throws IOException {// 读取下一个double型数值
+            return Double.parseDouble(next());
+        }
     }
 
-    static int nextInt() throws IOException {// 读取下一个int型数值
-        return Integer.parseInt(next());
-    }
-
-    static double nextDouble() throws IOException {// 读取下一个double型数值
-        return Double.parseDouble(next());
-    }
 }
+
