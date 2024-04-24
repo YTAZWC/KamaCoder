@@ -14,14 +14,18 @@ public class k_46_BringResearchMaterials {
 
         Scanner in = new Scanner(System.in);
 
-        int m = in.nextInt();   // 研究材料种类
-        int n = in.nextInt();   // 行李空间
+        // 研究材料种类
+        int m = in.nextInt();
+        // 行李空间
+        int n = in.nextInt();
 
-        int[] a = new int[m];   // 每种研究材料所占空间
+        // 每种研究材料所占空间
+        int[] a = new int[m];
         for (int i = 0; i < m; i++) {
             a[i] = in.nextInt();
         }
-        int[] b = new int[m];   // 每种研究材料的价值
+        // 每种研究材料的价值
+        int[] b = new int[m];
         for (int i = 0; i < m; i++) {
             b[i] = in.nextInt();
         }
